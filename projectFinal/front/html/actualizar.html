@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Actualizar</title>
+</head>
+<body>
+
+	<article>
+		<section id="actualizar_form">
+			<label >¿Que título desea actualizar?</label>
+			<input type="text" name="actualizarText" placeholder="Búsqueda título" id="actualizarText">
+			<input type="image" src="img/buscar.png" alt="Buscar" 	width="35px" onclick="searchUpdate();" id="buscarbtnActualizar">
+	</section>
+	</article>
+
+	<article id="readUpdate">
+	<header>
+	<section>
+	<h4 id="h4titulo" style="display: none;">Título:</h4>
+	<input type="text" name="tituloUpdate" id="tituloUpdate" style="display: none;">
+	<h4 id="h4palabras_clave" style="display: none;">Palabras Clave:</h4>
+	<input type="text" name="palabrasClaveUpdate" id="palabrasClaveUpdate" style="display: none;">
+	</section>
+	</header>
+	<main>
+	<h4 id="h4contenido" style="display: none;">Contenido:</h4>
+	<input type="text" name="contenidoUpdate" id="contenidoUpdate" style="display: none;">
+	</main>
+	<footer>
+	<h4 id="h4autor" style="display: none;">Autor:</h4>
+	<input type="text" name="autorUpdate" id="autorUpdate" style="display: none;">
+	</footer>
+
+	<section id="actualizarbtn" style="display: none;">
+		<p>¿Desea actualizar el componente?</p>
+		<input type="button" name="" value="Actualizar" id="confirmUpdate" onclick="confirmUpdate();">
+	</section>
+	</article>
+
+	<script type="text/javascript">		
+		//variable global de proyecto 
+		var MVC = {}; 
+	</script>	
+	<script type="text/javascript" src="./js/controller.js"></script>
+	<script type="text/javascript" src="./js/model.js"></script>
+	<script type="text/javascript" src="./js/view.js"></script>
+	<script type="text/javascript" src="./main.js"></script> 
+
+</body>
+</html>
